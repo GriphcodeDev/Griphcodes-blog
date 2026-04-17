@@ -1,0 +1,310 @@
+@use "variables";
+
+#navigation {
+    margin: 0;
+    
+    display: flex;
+    position: fixed;
+    
+    border: solid 2px;
+    border-color: variables.$BorderColor;
+    border-top: 0;
+    border-left: 0;
+    border-bottom: 0;
+
+    word-spacing: 10px;
+
+    width: 15vw;
+    height: 1000vw;
+
+
+}
+
+#navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    margin-top: 70px;
+
+    
+    
+}
+
+#navigation li {
+    list-style-type: none;
+    display: flex;
+
+    margin-left: 30px;
+}
+
+#navigation a {
+    color: variables.$TextColor;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: variables.$IBM-Light;
+    color: variables.$LabelColor;
+
+    font-weight: 300;
+
+    transition: transform 0.5s ease;
+}
+
+#navigation a:hover {
+    color: variables.$TextColor;
+
+    transform: translateX(10px);
+}
+
+#navigation h3 {
+    margin: 10px;
+
+    font-family: variables.$IBM-Regular;
+    font-weight: 100;
+    font-size: 14px;
+    color: variables.$LabelColor;
+}
+
+#navigation span {
+    font-family: variables.$IBM-Italic;
+    
+}
+
+// Main Page
+#main {
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+
+    margin-left: 350px;
+
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    flex: 1;
+
+}
+
+#heading-one {
+    font-family: variables.$DMSerif;
+    color: variables.$TextColor;
+
+    font-size: 30px;
+}
+
+#heading-two {
+    font-family: variables.$DMSerif;
+    color: variables.$SpecialColor;
+
+    font-size: 50px;
+}
+
+#heading-three {
+    font-family: variables.$DMSerif;
+    color: variables.$SpecialColor;
+
+    font-size: 50px;
+
+    text-align: center;
+}
+
+#bio h4 {
+    margin-top: 30px;
+    width: 500px;
+
+    font-family: variables.$IBM-Light;
+    color: variables.$TextColor;
+    letter-spacing: 0.5px;
+}
+
+.highlight {
+    border: 1px;
+    
+    padding: 1.5px;
+    color: variables.$Background;
+    background-color: variables.$SpecialColor;
+
+}
+
+.line {
+    margin-top: 30px;
+    width: 30vw;
+    height: 2px;
+    background-color: variables.$BorderColor;
+
+}
+
+.line-center {
+    display: flex;
+    margin-top: 30px;
+    width: 30vw;
+    height: 2px;
+    background-color: variables.$BorderColor;
+
+    justify-self: center;
+}
+
+#skills {
+    margin-top: 40px;
+}
+
+#skills h4 {
+    font-family: variables.$DMSerif-Italic;
+
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.badge {
+    font-family: variables.$IBM-Light;
+    color: variables.$LabelColor;
+    font-size: 12px;
+
+    border: solid 1px;
+    border-color: variables.$LabelColor;
+    padding: 8px;
+}
+
+.badge:hover {
+    background-color: variables.$Foreground;
+    color: variables.$Background;
+}
+
+#links {
+    margin-top: 50px;
+}
+
+#links h4 {
+    font-family: variables.$DMSerif-Italic;
+
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.link {
+
+    padding: 15px;
+    color: variables.$LabelColor;
+    font-family: variables.$IBM-Regular;
+
+    font-size: 16px;
+    
+    text-decoration: none;
+
+}
+
+.link-btn {
+    
+    border: solid 1px;
+    border-color: variables.$LabelColor;
+    padding: 15px;
+    color: variables.$LabelColor;
+    font-family: variables.$IBM-Regular;
+    
+    font-size: 16px;
+
+    text-decoration: none;
+
+}
+
+#articles {
+    margin-top: 50px;
+    
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+
+    align-self: center;
+    
+}
+
+.card-article {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px;
+    padding: 20px;
+    font-family: variables.$IBM-Regular;
+    gap: 10px;
+    color: variables.$TextColor;
+
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    
+    
+
+}
+
+.card-article h2, p {
+    display: flex;
+    width: 250px;
+    align-items: flex-start;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2;
+}
+
+.card-article a {
+    display: flex;
+    justify-content: flex-end;
+
+    margin-top: 40px;
+}
+
+.card-article:hover {
+ background-color: variables.$Foreground;
+ color: variables.$Background;
+   
+}
+
+#project-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    
+    padding: 20px;
+
+    background-color: variables.$Foreground;
+    color: variables.$Background;
+
+}
+
+.cards h1 {
+    font-family: variables.$IBM-Regular;
+    
+    text-shadow: 5px 5px 5px variables.$SpecialColor;
+}
+
+.cards h4 {
+    font-family: variables.$IBM-Italic;
+}
+
+.cards p {
+    font-family: variables.$IBM-Light;
+}
+
+.cards a {
+    
+    width: 50px;
+    padding: 8px;
+    border: solid 1px;
+    color: variables.$Background;
+
+    text-decoration: none;
+}
+

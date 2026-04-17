@@ -1,0 +1,44 @@
+@use "sass:list";
+
+@font-face {
+    font-family: DMSerifRegular;
+    src: url(/assets/fonts/DMSerifDisplay-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: DMSerifItalic;
+    src: url(/assets/fonts/DMSerifDisplay-Italic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: IBMPlexItalic;
+    src: url(/assets/fonts/IBMPlexMono-Italic.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: IBMPlexMono;
+    src: url(/assets/fonts/IBMPlexMono-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: IBMPlexLight;
+    src: url(/assets/fonts/IBMPlexMono-Light.ttf) format("truetype");
+}
+
+$Background: #f5f4ef;
+$Foreground: #1a1917;
+$TextColor: #1a1917;
+$SpecialColor: #c8490a;
+$LabelColor: #888580;
+$BorderColor: #d9d7d0;
+
+
+// Fonts & Text size
+$DMSerif: "DMSerifRegular", serif;
+$DMSerif-Italic: "DMSerifItalic", serif;
+$IBM-Regular: "IBMPlexMono", monospace;
+$IBM-Italic: "IBMPlexItalic", monospace;
+$IBM-Light: "IBMPlexLight", monospace;
+
+
+$Size: ("ExtraSmall": 8px, "Small": 16px, "Medium": 24px, "Large": 32px, "ExtraLarge": 64px)
