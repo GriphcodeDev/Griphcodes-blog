@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <meta charset="UTF-8">
+{% include "_includes/head.liquid" %}
 
-    <title>document</title>
-    </head>
+   
+    <div id="post-main">
+    <div class="post-content">
+        <h1 class="post-title">{{ title }}</h1>
+        <h3 class="post-desc">{{ description }}</h3>
+        <h4 class="post-date">{{ date | date: "%Y-%m-%d" }}</h4>
+        
 
-    <body>
-        <h1>Blog page!</h1>
+        <img width="50" class="oneko-post" src="/assets/img/oneko_sleep.gif" alt="">
+        <hr class="post-line">
+        
+        <div class="post-content-main">{{ content }}</div>
+        
+    </div>
 
-    <h1>{{title}}</h1>
-
-
-    {{content}}
-
-
-
-    </body>
-
-</html>
+    </div>

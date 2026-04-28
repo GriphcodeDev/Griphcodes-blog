@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html>
-    <head>
-    <meta charset="UTF-8">
+{% include "_includes/head.liquid" %}
 
-    <title>document</title>
-    </head>
-
-    <body>
-        <h1>start</h1>
+  <div id="main">
+  <div class="grid">
+    {% for post in collections.posts %}
+    <div class="card">
+      <div class="card-body">
+        <img width="30" class="oneko" src="/assets/img/oneko_sleep.gif" alt="">
+        <p class="card-title">@Blog/{{ post.data.title | slugify }}</p>
+        <p class="card-desc">{{ post.data.description }}</p>
+        <span class="card-date">{{ post.data.date | date: "%Y-%m-%d" }} {{ post.data.edit }}</span>
+        <a class="card-link" href="{{ post.url }}">Here</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
     
-    <h1>{{title}}</h1>
 
-
-    {{content}}
-        
-
-
-    </body>
-
+</body>
 </html>

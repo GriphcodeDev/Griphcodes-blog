@@ -1,5 +1,7 @@
 @use "components";
 @use "variables";
+@use "sets";
+@use "post";
 
 * {
     margin: 0;
@@ -7,7 +9,6 @@
 }
 
 body {
-    display: flex;
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: variables.$Background;

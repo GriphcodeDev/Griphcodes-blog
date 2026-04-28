@@ -1,0 +1,27 @@
+@use "variables";
+
+h1, h2, h3 {
+    font-family: variables.$TitleFont1;
+}
+
+p {
+    font-family: variables.$TitleFont1;
+    letter-spacing: 0px;
+}
+
+pre {
+    background-color: variables.$Foreground;
+    padding: 10px;
+    border: solid 1pt;
+    border-color: variables.$BorderColor;
+
+    border-radius: 10px;
+}
+
+hr {
+    width: 50%;
+}
+
+.oneko-post {
+    transform: translate(-300px, 20px);
+}

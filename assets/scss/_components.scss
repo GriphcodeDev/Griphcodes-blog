@@ -1,310 +1,181 @@
 @use "variables";
 
 #navigation {
-    margin: 0;
-    
+    padding: 20px;
     display: flex;
+    flex-direction: row;
     position: fixed;
-    
-    border: solid 2px;
-    border-color: variables.$BorderColor;
-    border-top: 0;
-    border-left: 0;
-    border-bottom: 0;
+    background-color: variables.$Foreground;
+    width: 100%;
+    top: 0;
+    border: solid variables.$BorderColor 1px;
+    justify-content: space-between;
+    box-sizing: border-box;
 
-    word-spacing: 10px;
-
-    width: 15vw;
-    height: 1000vw;
-
-
+    align-items: center;
 }
 
-#navigation ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    margin-top: 70px;
-
-    
-    
-}
 
 #navigation li {
-    list-style-type: none;
     display: flex;
-
-    margin-left: 30px;
+    gap: 20px;
 }
 
-#navigation a {
-    color: variables.$TextColor;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: variables.$IBM-Light;
-    color: variables.$LabelColor;
 
-    font-weight: 300;
-
-    transition: transform 0.5s ease;
+.nav-link {
+    font-family: variables.$TitleFont1;
+    font-size: 20px;
 }
 
-#navigation a:hover {
-    color: variables.$TextColor;
-
-    transform: translateX(10px);
-}
-
-#navigation h3 {
-    margin: 10px;
-
-    font-family: variables.$IBM-Regular;
-    font-weight: 100;
-    font-size: 14px;
-    color: variables.$LabelColor;
-}
-
-#navigation span {
-    font-family: variables.$IBM-Italic;
+.nav-link-right {
+    padding: 10px;
+    font-family: variables.$TitleFont1;
+    font-size: 15px; 
+    font-weight: bolder;
     
-}
-
-// Main Page
-#main {
-    display: flexbox;
-    flex-direction: column;
+    border: solid 1px variables.$BorderColor;
+    border-radius: 12px;
+    display: flex;
+    gap: 5px;
     align-items: center;
-    position: absolute;
-
-    margin-left: 350px;
-
+    background-color: green;
 }
 
-#intro {
+.nav-link-center {
+    font-family: variables.$TitleFont1;
+    font-size: 15px;    
+}
+
+.nav-title {
+    font-family: variables.$TitleFont1;
+    font-size: 20px;
+
+    color: variables.$CardTitleColor;
+}
+
+
+#main {
     display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    flex: 1;
-
-}
-
-#heading-one {
-    font-family: variables.$DMSerif;
-    color: variables.$TextColor;
-
-    font-size: 30px;
-}
-
-#heading-two {
-    font-family: variables.$DMSerif;
-    color: variables.$SpecialColor;
-
-    font-size: 50px;
-}
-
-#heading-three {
-    font-family: variables.$DMSerif;
-    color: variables.$SpecialColor;
-
-    font-size: 50px;
-
-    text-align: center;
-}
-
-#bio h4 {
-    margin-top: 30px;
-    width: 500px;
-
-    font-family: variables.$IBM-Light;
-    color: variables.$TextColor;
-    letter-spacing: 0.5px;
-}
-
-.highlight {
-    border: 1px;
-    
-    padding: 1.5px;
-    color: variables.$Background;
-    background-color: variables.$SpecialColor;
-
-}
-
-.line {
-    margin-top: 30px;
-    width: 30vw;
-    height: 2px;
-    background-color: variables.$BorderColor;
-
-}
-
-.line-center {
-    display: flex;
-    margin-top: 30px;
-    width: 30vw;
-    height: 2px;
-    background-color: variables.$BorderColor;
-
-    justify-self: center;
-}
-
-#skills {
-    margin-top: 40px;
-}
-
-#skills h4 {
-    font-family: variables.$DMSerif-Italic;
-
-    font-size: 24px;
-    margin-bottom: 12px;
-}
-
-.badge {
-    font-family: variables.$IBM-Light;
-    color: variables.$LabelColor;
-    font-size: 12px;
-
-    border: solid 1px;
-    border-color: variables.$LabelColor;
-    padding: 8px;
-}
-
-.badge:hover {
-    background-color: variables.$Foreground;
-    color: variables.$Background;
-}
-
-#links {
-    margin-top: 50px;
-}
-
-#links h4 {
-    font-family: variables.$DMSerif-Italic;
-
-    font-size: 24px;
-    margin-bottom: 24px;
-}
-
-.link {
-
-    padding: 15px;
-    color: variables.$LabelColor;
-    font-family: variables.$IBM-Regular;
-
-    font-size: 16px;
-    
-    text-decoration: none;
-
-}
-
-.link-btn {
-    
-    border: solid 1px;
-    border-color: variables.$LabelColor;
-    padding: 15px;
-    color: variables.$LabelColor;
-    font-family: variables.$IBM-Regular;
-    
-    font-size: 16px;
-
-    text-decoration: none;
-
-}
-
-#articles {
-    margin-top: 50px;
-    
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-
-    align-self: center;
-    
-}
-
-.card-article {
-    display: flex;
-    flex-direction: column;
-    border: solid 2px;
     padding: 20px;
-    font-family: variables.$IBM-Regular;
-    gap: 10px;
-    color: variables.$TextColor;
-
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
-    
-    
-
+    margin-top: 100px;
 }
 
-.card-article h2, p {
-    display: flex;
-    width: 250px;
-    align-items: flex-start;
-
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-
-    -webkit-line-clamp: 2;
-    -webkit-line-clamp: 2;
-}
-
-.card-article a {
-    display: flex;
-    justify-content: flex-end;
-
-    margin-top: 40px;
-}
-
-.card-article:hover {
- background-color: variables.$Foreground;
- color: variables.$Background;
-   
-}
-
-#project-cards {
+.grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 
-    
 }
 
-.cards {
+.card {
+    height: 160px;
+    width: 320px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+
+    background-color: variables.$CardBackground;
+    border-radius: 10px;
+    border: variables.$BorderColor solid 1px;
+
+}
+
+.card-body {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-family: variables.$TitleFont1;
+    color: variables.$CardTitleColor;
+}
+
+.card-desc {
+    font-family: variables.$ParagraphFont;
+    color: variables.$CardDescColor;
+}
+
+.card-date {
+    font-family: variables.$ParagraphFont;
+    color: variables.$CardDateColor;
+}
+
+.card-link {
+    font-family: variables.$TitleFont1;
+    color: variables.$LabelColor;
+    font-size: 18px;
+
+    transition: color 0.5s;
+}
+
+.card-link:hover {
+    color: variables.$CardTitleColor;
+}
+
+.oneko {
+    position: fixed;
+
+    transform: translateX(290px);
+}
+
+
+// Post conntent 
+
+#post-main {
+    display: flex;
+    padding: 30px;
+    margin-top: 100px;
+    
+    justify-content: center;
+    
 
     
-    padding: 20px;
 
-    background-color: variables.$Foreground;
-    color: variables.$Background;
+ 
 
 }
 
-.cards h1 {
-    font-family: variables.$IBM-Regular;
+.post-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 780px;
+
+    align-items: center;
+   
+
+}
+
+.post-line {
+    width: 100%;
+}
+
+.post-content-main {
+    color: variables.$TextColor;
+    font-family: variables.$TitleFont;
+    width: 100%;
+    line-height: 1.75;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     
-    text-shadow: 5px 5px 5px variables.$SpecialColor;
 }
 
-.cards h4 {
-    font-family: variables.$IBM-Italic;
+.post-title {
+    font-family: variables.$ParagraphFont;
+    color: variables.$TextColor;
 }
 
-.cards p {
-    font-family: variables.$IBM-Light;
+.post-desc {
+    font-family: variables.$ParagraphFont;
+    color: variables.$CardDescColor;
 }
 
-.cards a {
-    
-    width: 50px;
-    padding: 8px;
-    border: solid 1px;
-    color: variables.$Background;
-
-    text-decoration: none;
+.post-date {
+    font-family: variables.$ParagraphFont;
+    color: variables.$CardDateColor;
 }
-

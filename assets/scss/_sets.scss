@@ -1,0 +1,14 @@
+@use "variables";
+
+a {
+    color: variables.$TextColor;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 800;
+    font-family: variables.$TitleFont;
+} 
+
+li {
+    list-style-type: none;
+}
