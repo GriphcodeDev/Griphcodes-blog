@@ -37,6 +37,7 @@
   border: solid #21262d 1px;
   justify-content: space-between;
   box-sizing: border-box;
+  z-index: 1;
   align-items: center;
 }
 
@@ -223,6 +224,13 @@ hr {
 
 .oneko-post {
   transform: translate(-300px, 20px);
+}
+
+#like-btn {
+  background-color: #ffffff;
+  width: 80px;
+  border: solid 1px black;
+  border-radius: 20px;
 }
 
 * {

@@ -2,17 +2,21 @@
 
    
     <div id="post-main">
+
+            
     <div class="post-content">
         <h1 class="post-title">{{ title }}</h1>
         <h3 class="post-desc">{{ description }}</h3>
         <h4 class="post-date">{{ date | date: "%Y-%m-%d" }}</h4>
-        
+
+        <div data-lyket-type="like" data-lyket-namespace="like-me" data-lyket-id="everybody-like-now" id="like-btn"></div>
 
         <img width="50" class="oneko-post" src="/assets/img/oneko_sleep.gif" alt="">
         <hr class="post-line">
         
         <div class="post-content-main">{{ content }}</div>
-        
+          
+            <script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_7caa77c3d43e2f317635af43075afb"></script>
     </div>
 
     </div>
